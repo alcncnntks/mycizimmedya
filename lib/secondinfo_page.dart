@@ -7,6 +7,7 @@ class SecondInfoPage extends StatefulWidget {
   final String name;
   final String surname;
 
+
   SecondInfoPage({required this.userId, required this.token, required this.name, required this.surname});
 
   @override
@@ -24,7 +25,7 @@ class _SecondInfoPageState extends State<SecondInfoPage> {
   bool _isLoading = false;
   bool _hasError = false;
   String _errorMessage = '';
-
+//test
   void _submitBirthday() {
     if (_selectedDay != null && _selectedMonth != null && _selectedYear != null) {
       String birthday = '$_selectedDay/$_selectedMonth/$_selectedYear';
